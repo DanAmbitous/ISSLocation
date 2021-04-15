@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+  crossorigin="" defer></script>
+  <link rel="stylesheet" href="issLocation.css">
+  <script src="issLocation.js" defer></script>
+  <title>ISS Location</title>
+</head>
+<body>
+  <div id="flex-inputs">
+    <label for="inputs">Distance Units</label>
+    <select name="inputs" id="inputs">
+      <option value="kilometers">Kilometers</option>
+      <option value="meters">Meters</option>
+      <option value="miles">Miles</option>
+      <option value="feet">Feet</option>
+      <option value="inches">Inches</option>
+    </select>
+  </div>
+  
+  <div id="flex-container">
+    <p>Latitude: <span id="latitude"></span></p>
+    <p>Longitude: <span id="longitude"></span></p>
+    <p>Velocity: <span id="velocity"></span></p>
+    <p>Altitude: <span id="altitude"></span></p>
+    <p>Units: <span id="units"></span></p>
+    <p>Visibility: <span id="visibility"></span></p>
+  </div>
+
+  <div id="map"></div>
+</body>
+</html>
