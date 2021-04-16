@@ -60,7 +60,7 @@ const unitConverterVelocity = (value) => {
   } else if (speedDistance.selectedIndex === 4) {
     return value * 39370
   }
-  
+
   toRound(value);
 }
 
@@ -104,8 +104,8 @@ let issData = async (apiUrl, distanceSymbol, speedUnit) => {
 
   issLocation.setLatLng([latitude, longitude]);
 
-  document.getElementById('latitude').textContent = latitude;
-  document.getElementById('longitude').textContent = longitude;
+  document.getElementById('latitude').textContent = `${latitude}°`;
+  document.getElementById('longitude').textContent = `${longitude}°`;
   document.getElementById('velocity').textContent = `${velocity} ${speedUnit}`;
   document.getElementById('altitude').textContent = `${altitude} ${distanceSymbol}`;
   document.getElementById('visibility').textContent = visibility;
